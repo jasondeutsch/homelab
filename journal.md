@@ -1,5 +1,7 @@
 # HOMELAB: THE JOURNAL
 
+![yup](1point21.png)
+
 ## Day 0:
 
 ### Starting Equipment List:
