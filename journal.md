@@ -18,9 +18,45 @@ I plan to administer the cluster through the shell via SSH, GUI not needed.
 
 ## Day 1:
 
-Headless Pi:
+### Headless Pi:
 
-Static IP:
+Lazy programmers are good programmers. Since we're good programmers let's by lazy and not bother with plugin in a monitor, mouse and keyboard into our Pi and stay comfortable in the our chairs.
+
+We setup SSH to be on by default in our OS image. Once we locate the IP of this device we can simply ssh into it.
+```shell
+ssh pi@<ip-addr-of-rpi>
+```
+Turning on SSH by default we get the default Raspberry Pi ssh credentials of `pi` and `raspberry` respectively. 
+Prior to anything else, let's delete this user and add one of our own with slightly better security.
+
+
+```shell
+sudo adduser <mynewuser>
+```
+
+Then we can set the password and confirm the changes:
+```shell
+Adding user `<mynewuser>' ...
+Adding new group `<mynewuser>' (1001) ...
+Adding new user `<mynewuser>' (1001) with group `<mynewuser>' ...
+Creating home directory `/home/<mynewuser>' ...
+Copying files from `/etc/skel' ...
+New password:
+```
+
+Next, since this user will need `sudo` let's grant that:
+```shell
+usermod -aG sudo <mynewuser>
+```
+
+Finally, let's delete the default user:
+```shell
+userdel -r pi
+```
+
+
+
+### Static IP
 
 IP Binding in router
 
@@ -28,9 +64,8 @@ Starting in headlessmode
 Add SSH file to boot image
 Set IP on each device
 
-Change ssh credentails:
 
-K8s
+### K8s and Helm
 
 Kubernetes
 ```shell
@@ -54,4 +89,6 @@ sudo apt-get update
 sudo apt-get install helm
 ```
 
-~lather ~~rinse~ repeate 
+### Finishing Day 1
+
+Do this `n` more times for the `n` more Pis.
