@@ -67,7 +67,14 @@ Add SSH file to boot image
 Set IP on each device
 
 
-### K8s and Helm
+### Docker, K8s and Helm
+
+To start, we'll need a container runtime. I use Docker at work so let's use that here:
+
+Docker
+```shell
+TODO install Docker
+```
 
 Kubernetes
 ```shell
@@ -98,3 +105,10 @@ Do this `n` more times for the `n` more Pis.
 ## Day 2: Setting Up the Cluster
 
 ## Day 3: A little cleanup with PoE
+
+Power over Ethernet (PoE), in short, is a technology that enables network cables to carry electrical power. If you want to learn more about it see [here](https://en.wikipedia.org/wiki/Power_over_Ethernet).  In order to provide PoE to the Pis in the cluster we will need some aditional hardware.
+[PoE Hats] (https://www.pishop.us/product/raspberry-pi-poe-hat/) provide exactly this mechanism; I'll take four, please. 
+
+(pics)
+
+Ok, this is all about cleeaner now that we have four cables out of the way. Well, it's been a long work day so that concludes <strong>Day 3</strong>.
