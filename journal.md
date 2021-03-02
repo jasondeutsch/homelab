@@ -94,3 +94,7 @@ sudo apt-get install helm
 ### Finishing Day 1
 
 Do this `n` more times for the `n` more Pis.
+
+## Day 2: Setting Up the Cluster
+
+## Day 3: A little cleanup with PoE
