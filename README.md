@@ -2,7 +2,7 @@
 
 ![yup](1point21.png)
 
-## Day 0:
+## Day 0: Shopping list
 
 ### Starting Equipment List:
 * 4x rPI 4 4gb
@@ -18,7 +18,7 @@
 I decided on <strong>Raspberry Pi OS Lite</strong> for the only reason is that it lacked a desktop environment so resources would not be wasted there. 
 I plan to administer the cluster through the shell via SSH, GUI not needed.
 
-## Day 1:
+## Day 1: Connecting the bits and bops
 
 ### Headless Pi:
 
