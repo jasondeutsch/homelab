@@ -2,15 +2,19 @@
 
 ## Day 0:
 
-Equipment List:
-* 3x rPI 4 4gb
+### Starting Equipment List:
+* 4x rPI 4 4gb
 * D-Link DGS-108 network switch
 * Cables
 * Some Micro SD cards, various capacity, whatever was on hand
 * Ethernet cables.
-* C4 Labs cluser
+* [C4 Labs cluser](https://www.amazon.com/gp/product/B0844YSJWB/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&th=1)
+* [balena for flashing SDs](https://www.balena.io/etcher/)
+* [ASUS AX5700 because the router from my ISP offerez zero configuration, this will be relevant later](https://www.amazon.com/gp/product/B08BJHS3X7/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 
-
+### Choice of OS
+I decided on <strong>Raspberry Pi OS Lite</strong> for the only reason is that it lacked a desktop environment so resources would not be wasted there. 
+I plan to administer the cluster through the shell via SSH, GUI not needed.
 
 ## Day 1:
 
