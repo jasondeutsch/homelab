@@ -63,6 +63,8 @@ hostnamectl set-hostname <new-name>
 
 ```
 
+*caveat* of your working on Ubuntu 18.04 or later then you'll need to do an extra step due to cloud-init. This Stack Overflow addresses theissue (https://askubuntu.com/questions/9540/how-do-i-change-the-computer-name_.
+
 
 ### Static IP
 
