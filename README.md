@@ -2,9 +2,9 @@
 
 ![yup](1point21.png)
 
-## Day 0: Shopping list
+## Day 0: Equipment
 
-### Starting Equipment List:
+### Starting Equipment:
 * 4x rPI 4 4gb
 * HP EliteDesk 800 G2 Mini
 * D-Link DGS-108 network switch
