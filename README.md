@@ -16,7 +16,7 @@
 * [ASUS AX5700 because the router from my ISP offerez zero configuration, this will be relevant later](https://www.amazon.com/gp/product/B08BJHS3X7/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 
 ### Choice of OS
-All nodes will be headless installs. The Pis will recieve [Ubuntu for Raspberry Pi](https://ubuntu.com/raspberry-pi) and the G2 Mini will get Ubuntu Server.
+All nodes will be headless installs of Ubuntu 20.04
 
 ## Day 1: Connecting the bits and bops
 
