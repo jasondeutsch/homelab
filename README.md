@@ -6,6 +6,7 @@
 
 ### Starting Equipment List:
 * 4x rPI 4 4gb
+* HP EliteDesk 800 G2 Mini
 * D-Link DGS-108 network switch
 * Cables
 * Some Micro SD cards, various capacity, whatever was on hand
@@ -15,14 +16,11 @@
 * [ASUS AX5700 because the router from my ISP offerez zero configuration, this will be relevant later](https://www.amazon.com/gp/product/B08BJHS3X7/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 
 ### Choice of OS
-I decided on <strong>Raspberry Pi OS Lite</strong> for the only reason is that it lacked a desktop environment so resources would not be wasted there. 
-I plan to administer the cluster through the shell via SSH, GUI not needed.
+All nodes will be headless installs. The Pis will recieve [Ubuntu for Raspberry Pi](https://ubuntu.com/raspberry-pi) and the G2 Mini will get Ubuntu Server.
 
 ## Day 1: Connecting the bits and bops
 
-### Headless Pi:
-
-Lazy programmers are good programmers. Since we're good programmers let's by lazy and not bother with plugin in a monitor, mouse and keyboard into our Pi and stay comfortable in the our chairs.
+### Headless Install:
 
 We setup SSH to be on by default in our OS image. Once we locate the IP of this device we can simply ssh into it.
 ```shell
@@ -67,7 +65,15 @@ Add SSH file to boot image
 Set IP on each device
 
 
-### Docker, K8s and Helm
+### Finishing Day 1
+
+Do this `n` more times for the `n` more Pis.
+
+## 
+
+## Day 2
+
+## Day 3
 
 To start, we'll need a container runtime. I use Docker at work so let's use that here:
 
@@ -98,17 +104,4 @@ sudo apt-get update
 sudo apt-get install helm
 ```
 
-### Finishing Day 1
 
-Do this `n` more times for the `n` more Pis.
-
-## Day 2: Setting Up the Cluster
-
-## Day 3: A little cleanup with PoE
-
-Power over Ethernet (PoE), in short, is a technology that enables network cables to carry electrical power. If you want to learn more about it see [here](https://en.wikipedia.org/wiki/Power_over_Ethernet).  In order to provide PoE to the Pis in the cluster we will need some aditional hardware.
-[PoE Hats] (https://www.pishop.us/product/raspberry-pi-poe-hat/) provide exactly this mechanism; I'll take four, please. 
-
-(pics)
-
-Ok, this is all about cleeaner now that we have four cables out of the way. Well, it's been a long work day so that concludes <strong>Day 3</strong>.
