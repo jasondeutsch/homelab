@@ -54,6 +54,14 @@ Finally, let's delete the default user:
 userdel -r pi
 ```
 
+### A Node needs a name
+
+There are a couple of different ways to change the a hostname. In this case I used `hostnamectl` as it provides the benefit of not needing a restart and persisting across restarts.
+
+```
+hostnamectl set-hostname <new-name>
+
+```
 
 
 ### Static IP
