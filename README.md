@@ -24,7 +24,7 @@ All nodes will be headless installs. The Pis will recieve [Ubuntu for Raspberry 
 
 We setup SSH to be on by default in our OS image. Once we locate the IP of this device we can simply ssh into it.
 ```shell
-ssh pi@<ip-addr-of-rpi>
+ssh ubuntu@<ip-addr>
 ```
 Turning on SSH by default we get the default Raspberry Pi ssh credentials of `pi` and `raspberry` respectively. 
 Prior to anything else, let's delete this user and add one of our own with slightly better security.
@@ -51,7 +51,7 @@ usermod -aG sudo <mynewuser>
 
 Finally, let's delete the default user:
 ```shell
-userdel -r pi
+userdel -r ubuntu
 ```
 
 ### A Node needs a name
